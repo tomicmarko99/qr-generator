@@ -1,2 +1,2 @@
 # qr-generator
-<img src="https://ibb.co/LRrB6Th" />
+<img src="https://i.ibb.co/bmFYL4R/Untitled-design.png" />
