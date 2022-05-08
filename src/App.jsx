@@ -12,8 +12,8 @@ function App() {
         width: 800,
         margin: 2,
         color: {
-          dark: "#335383ff",
-          light: "#ffffffff",
+          dark: "#212529",
+          light: "#ffb703",
         },
       },
       (err, url) => {
@@ -27,18 +27,17 @@ function App() {
 
   return (
     <div className="app">
-      <h1>QR Code Generator</h1>
-      <input
-        type="text"
-        placeholder="e.g. https://google.com"
-        value={url}
-        onChange={(evt) => setUrl(evt.target.value)}
-      />
-      <button onClick={GenerateQRCode}>Generate</button>
+      <h1>
+        <span>AtomQR</span> - QR Code Generator
+      </h1>
+      <div className="box">
+        <input type="text" placeholder="e.g. https://google.com" value={url} onChange={(evt) => setUrl(evt.target.value)} />
+        <button onClick={GenerateQRCode}>Generate</button>
+      </div>
       {qrcode && (
         <>
           <img src={qrcode} />
-          <a href={qrcode} download="qrcode.png">
+          <a className="download" href={qrcode} download="qrcode.png">
             Download
           </a>
         </>

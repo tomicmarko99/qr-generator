@@ -7,7 +7,7 @@
 
 body {
   text-align: center;
-  background-color: #1b2034;
+  background-color: #212529;
   color: #fff;
 }
 
@@ -15,9 +15,20 @@ body {
   padding: 2rem 1rem;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+h1 span {
+  color: #ffb703;
 }
 
 input {
@@ -25,6 +36,8 @@ input {
   outline: none;
   border: none;
   background: #eee;
+  color: #212529;
+  /* font-weight: bold; */
   width: 100%;
   max-width: 300px;
   padding: 0.5rem 1rem;
@@ -32,23 +45,40 @@ input {
   margin-right: 1rem;
 }
 
-button,
-a {
+button {
   appearance: none;
   outline: none;
   border: none;
   background: none;
-  margin-top: 1rem;
   cursor: pointer;
-  color: #2bcb4b;
+  color: #ffb703;
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1;
   text-decoration: none;
+  letter-spacing: 1.5px;
 }
 
 img {
   display: block;
   width: 100%;
   max-width: 480px;
-  margin: 2rem auto;
+  margin: 3rem auto;
+}
+
+.download {
+  appearance: none;
+  outline: none;
+  border: 2px solid #ffb703;
+  border-radius: 5px;
+  background: none;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  color: #ffb703;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 1.5px;
 }
